@@ -1,0 +1,77 @@
+<html>
+
+	<head>
+		<title>class Selector</title>
+		<style>
+		.ankush{
+			color:green;
+		}
+		.style1{
+			font-size:20px;
+		}
+		
+			
+		div p{
+			color:red;
+		}
+		
+		ul > li{
+			color:blue;
+		}
+		
+		ul + li{
+			color:pink;
+		}
+		
+		ul ~ li{
+			color:orange;
+		}
+		
+		</style>
+	</head>
+	<body>
+	
+	
+		<!-- Combinator selector
+		
+		1. Descendent Selector (space)
+		2. child selector (>)
+		3. Adjecent selector
+			a. Adjcent sibling selector (+)
+			b. General sibling selector  (~)-->
+			
+		<!--Difference between ID selector and Class selector
+		
+		id selector cannot use multiple id in one tag
+		class selector can use multiple classes in one tag-->
+		
+		<h1 class="ankush style1">This is first css</h1>
+		<h2>This is Second css</h2>
+		
+		<!-- Descendent selector-->
+		
+		<div>
+			<p>This is para1</p>
+			<p>This is para2</p>
+			<p>This is para3</p>
+			<h1>this is heading 1</h1>
+		</div>
+		<!--child selector-->
+		
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		<!--Adjecent sibling selector-->
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+			<li>4</li>
+			<li>5</li>
+		
+		
+	</body>
+</html>

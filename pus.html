@@ -1,0 +1,71 @@
+<html>
+
+	<head>
+		<title>pusedo Selector</title>
+		<!--pusedo selector
+		1. hover
+		2. focus
+		3. active
+		4. n-th child
+		5. first-child
+		6. last-child
+		7. not(.class)-->
+		<style>
+		h1:hover{
+			color:green;
+		}
+		
+		input:focus{
+			background-color:red;
+		}
+		
+		button:active{
+			background-color:aqua;
+		}
+		
+		li:nth-child(3){
+			color:red
+		}
+		
+		li:last-child{
+			color:blue;
+		}
+		
+		li:first-child{
+			color:blue;
+		}
+		
+		.child1{
+		}
+		
+		li:not(.child1){
+			color:pink;
+		}
+		</style>
+	</head>
+	<body>
+	<!--hover Selector-->
+		<h1>This is first css</h1>
+		
+		<!--focus Selector-->
+		
+		<label>Name</label><input type="text">
+		
+		<!--active Selector-->
+		
+		<button>submit</button>
+		
+		
+		<ol>
+			<!--li:first-child-->
+			<li>ankush</li>
+			<li class="child1">tauhid</li>
+			
+			<!--li:nth-child(3)-->
+			<li>lokesh</li>
+			<!--li:last-child-->
+			<li>vinay</li>
+		</ol>
+	</body>
+
+</html>

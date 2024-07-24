@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>attribute selector</title>
+		
+		<!--
+
+		1. [attribute]
+		2. [attribute="value"]  	CSS will apply when we give attribute with value in square bracket.
+		3. [attribute ~="value"]   It will be used for value which is seperated by space.
+		4. [attribute |="value"]   It will be used for value which is has"-" after the value.
+		5. [attribute ^="value"]   if the mention content of the starting value
+		6. [attribute $="value"]   if the mention content of the last value.
+		7. [attribute *="value"]   if the mention value is substring.
+		-->
+		<style>
+		
+		[align]{
+			color:green
+		}
+		
+		[align="right"]{
+			color:blue
+		}
+		
+		[class ~="style2"]{
+		color:green;
+		}
+		
+		[class |="tr"]{
+			color:brown;
+		}
+		
+		[class ^="some"]{
+			color:aqua;
+		}
+		
+		[class $="name"]{
+			color:orange;
+		}
+		
+		[class *="class"]{
+			color:aqua;
+		}
+		</style>
+	</head>
+	<body>
+		
+		<h1 align="center">this is heading1</h1>
+		<h1 align="right">this is heading2</h1>
+		<h1 class="style1 style2 style3">this is heading3</h1>
+		<h1 class="tr-hr-br">this is heading4</h1>
+		<h1 class="someotherclass">this is heading5</h1>
+		<h1 class="someothername">this is heading6</h1>
+		<h1 class="otherclassname">this is heading7</h1>
+	
+	</body>
+</html>
